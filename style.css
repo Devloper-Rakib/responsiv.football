@@ -1,0 +1,439 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+}
+
+header {
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(0, 0, 187);
+    display: flex;
+    justify-content: center;
+}
+
+nav,
+.main-nav {
+    display: flex;
+    align-items: center;
+    margin: 35px 0;
+}
+
+.head {
+    justify-content: center;
+    width: 1350px;
+}
+
+i {
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 15px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background-color 1s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 15px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: darkblue;
+}
+
+.login {
+    width: 155px;
+}
+
+.login a {
+    background-color: rgb(211, 1, 211);
+}
+
+.login a:hover {
+    background-color: darkblue;
+}
+
+.header-title h1 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 30px;
+    position: relative;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    flex-direction: column;
+}
+
+@keyframes opacity {
+    0% {
+        color: crimson;
+    }
+    50% {}
+    100% {
+        color: yellow;
+    }
+}
+
+.header-title img {
+    width: 50%;
+    height: 400px;
+}
+
+
+/* =====Players===== */
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.players {
+    width: 80%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.player {
+    width: 400px;
+    margin: 5px;
+    padding: 15px;
+    box-shadow: 0 0 8px 1px rgb(212 212 212);
+    justify-content: center;
+}
+
+.player:hover {
+    margin: 5px;
+    padding: 15px;
+    box-shadow: 0 0 8px 1px rgb(124, 124, 124);
+    justify-content: center;
+}
+
+.player img {
+    width: 100%;
+}
+
+p {
+    text-align: justify;
+}
+
+
+/* =====Bonus===== */
+
+.bonus {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newse {
+    width: 450px;
+    margin: 0 50px;
+}
+
+#watch {
+    font-size: 20px;
+    background-color: rgb(211, 1, 211);
+    border-radius: 0;
+}
+
+#watch:hover {
+    font-size: 20px;
+    background-color: darkblue;
+    border-radius: 0;
+}
+
+.image {
+    margin: 0 50px;
+}
+
+.image img {
+    width: 550px;
+    height: 450px;
+    padding: 5px;
+    box-shadow: 0 0 5px 5px gray;
+}
+
+
+/* =====Footer===== */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    margin: 80px 0;
+}
+
+.social-site a {
+    text-decoration: none;
+    color: gray;
+    font-size: 25px;
+    margin: 15px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: color .5s;
+}
+
+.social-site a:hover {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    font-size: 25px;
+    margin: 15px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.site {
+    margin: 5px;
+    transition: .5s;
+}
+
+.site:hover {
+    margin: 5px;
+    transform: scale(1.5);
+}
+
+
+/* =====================Media Quari===================== */
+
+@media (max-width:480px) {
+    body {
+        width: 100%;
+        justify-content: center;
+    }
+    header {
+        width: 100%;
+    }
+    .head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-title {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        margin: 25px 1px;
+    }
+    .header-title img {
+        width: 290px;
+        height: 240px;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu {
+        display: inline;
+    }
+    .page {
+        display: none;
+    }
+    .players {
+        /* width: 80%; */
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-column-gap: 20px; */
+        /* grid-row-gap: 20px; */
+    }
+    .bonus {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .newse {
+        width: 80%;
+        margin: 50px 0;
+    }
+    .image {
+        width: 80%;
+        margin: 0;
+        justify-content: center;
+    }
+    .image img {
+        width: 100%;
+        height: 300px;
+    }
+    .logo img {
+        width: 80%;
+    }
+}
+
+
+/* ===================================================== */
+
+@media (max-width:768px) {
+    header {
+        width: 100%;
+    }
+    .head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-title {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        margin: 25px 1px;
+    }
+    .header-title img {
+        width: 290px;
+        height: 240px;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .page {
+        display: none;
+    }
+    .players {
+        /* width: 80%; */
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-column-gap: 20px; */
+        /* grid-row-gap: 20px; */
+    }
+    .bonus {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .newse {
+        width: 80%;
+        margin: 50px 0;
+    }
+    .image {
+        width: 80%;
+        margin: 0;
+        justify-content: center;
+    }
+    .image img {
+        width: 100%;
+        height: 450px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .logo img {
+        width: 80%;
+    }
+}
+
+@media (min-width:769px) {
+    header {
+        width: 100%;
+    }
+    .ball {
+        display: none;
+    }
+    .head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-title {
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: space-between; */
+        align-items: center;
+        margin: 25px 1px;
+    }
+    .players {
+        /* width: 80%; */
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-column-gap: 20px; */
+        /* grid-row-gap: 20px; */
+    }
+    .player {
+        width: 250px;
+        margin: 5px;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0 0 8px 1px rgb(212 212 212);
+        justify-content: center;
+    }
+    .bonus {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .newse {
+        width: 70%;
+        margin: 50px 0;
+    }
+    /* .image {
+        width: 80%;
+        margin: 0;
+        justify-content: center;
+    }
+    .image img {
+        width: 100%;
+        height: 450px;
+    } */
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .logo img {
+        width: 80%;
+    }
+}
+
+@media (max-width:1167px) {
+    .login {
+        width: 250px;
+    }
+}
